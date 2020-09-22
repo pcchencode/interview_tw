@@ -11,6 +11,7 @@ import urllib
 import argparse
 pd.set_option('display.max_rows', 250)
 
+# 這邊修改成輸入你的臉書帳號及密碼
 ac = 'your_fb_email'
 pw = 'your_fb_password'
 
@@ -39,7 +40,7 @@ password[0].send_keys(pw)
 button_login = browser.find_element_by_xpath('//*[@id="loginbutton"]') 
 button_login.click()
 
-########
+########開始填寫
 
 company = browser.find_element_by_xpath('//*[@id="iw-autocomplete"]')
 company.click()
